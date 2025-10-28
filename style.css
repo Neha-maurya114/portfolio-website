@@ -1,0 +1,124 @@
+:root {
+  --bg: #0f1724;
+  --card: #0b1220;
+  --muted: #94a3b8;
+  --accent: #7c3aed;
+  --radius: 14px;
+  --maxw: 1100px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, sans-serif;
+  background: #071827;
+  color: #e6eef8;
+  line-height: 1.6;
+}
+
+.wrap {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* ===== Header ===== */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 16px;
+  font-weight: 600;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  padding-top: 30px;
+}
+
+h1 {
+  font-size: 1.8rem;
+}
+
+.lead {
+  color: var(--muted);
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 12px;
+  background: var(--accent);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+/* ===== Sections ===== */
+section {
+  margin-top: 30px;
+}
+
+h2 {
+  border-left: 4px solid var(--accent);
+  padding-left: 8px;
+}
+
+/* ===== Cards & Grids ===== */
+.grid {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 18px;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  color: var(--muted);
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  nav {
+    margin-top: 10px;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+}
